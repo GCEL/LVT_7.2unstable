@@ -343,7 +343,13 @@ subroutine read_SMAPTB(source, filename, TBobs)
   deallocate(tbv_a_field)
   deallocate(tbh_f_field)
   deallocate(tbv_f_field)
+
+#else
+  integer :: c,r
+  real    :: tbh_ip(LVT_rc%lnc*LVT_rc%lnr)
+  real    :: tbv_ip(LVT_rc%lnc*LVT_rc%lnr)
 #endif
+
 
   do r=1,LVT_rc%lnr
      do c=1,LVT_rc%lnc

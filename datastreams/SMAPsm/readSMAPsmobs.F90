@@ -111,10 +111,12 @@ subroutine read_SMAPsm(source, name, smobs)
 !EOP
 !BOP
 
-#if (defined USE_HDF5)
+!#if (defined USE_HDF5)
 
   integer                       :: source 
   character(len=*)              :: name
+
+#if (defined USE_HDF5)
   character*100,   parameter    :: sm_gr_name = "Soil_Moisture_Retrieval_Data"
 !  character*100,   parameter    :: sm_field_name = "soil_moisture"
   character*100,   parameter    :: sm_field_name = "filtered_soil_moisture"
