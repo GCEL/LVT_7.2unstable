@@ -93,8 +93,9 @@ subroutine readLISDAdiagOutput(source)
         write(LVT_logunit,*) '[WARN] Warning: LIS DA ensemble spread file ',&
              trim(fname),' does not exist'
         spread_var = -9999.0
-     endif
 #endif
+     endif
+!#endif - wrong place!
      
      do k=1,lisdadiagoutput(source)%nstvars
         call LVT_logSingleDataStreamVar(LVT_MOC_DA_ENSSPREAD, source,&
@@ -136,8 +137,9 @@ subroutine readLISDAdiagOutput(source)
         write(LVT_logunit,*) '[WARN] Warning: LIS DA ensemble increments file ',&
              trim(fname),' does not exist'
         incr_var = -9999.0
-     endif
 #endif
+     endif
+! #endif  - this is in the wrong place (DAV)
      
      do k=1,lisdadiagoutput(source)%nstvars
         call LVT_logSingleDataStreamVar(LVT_MOC_DA_INCR, source,&
@@ -188,8 +190,9 @@ subroutine readLISDAdiagOutput(source)
         write(LVT_logunit,*) '[WARN] Warning: LIS DA ensemble innov file ',&
              trim(fname),' does not exist'
         innov_var = -9999.0
-     endif
 #endif
+     endif
+! #endif - this is in the wrong place! (DAV)
 
      call LVT_logSingleDataStreamVar( LVT_MOC_DA_NINNOV, source,&
           innov_var(:,:),vlevel=1,units="-")
