@@ -1,4 +1,5 @@
 readMOD10A1obs.o readMOD10A1obs.d : readMOD10A1obs.F90
+readMOD10A1obs.o : LVT_misc.h
 readMOD10A1obs.o : LVT_coreMod.o
 readMOD10A1obs.o : LVT_logMod.o
 readMOD10A1obs.o : LVT_timeMgrMod.o

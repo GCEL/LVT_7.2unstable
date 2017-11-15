@@ -112,12 +112,17 @@ subroutine readMOD10A1obs(source)
 
         deallocate(lb)
         deallocate(snfrac1)
+! DAV these #ifdef/#endif lines added when not using any netcdf...
+#if(defined USE_NETCDF3 || defined USE_NETCDF4)
      else
         snfrac = -9999
      endif
   else
      snfrac = -9999.0
+#endif
+! DAV to here
   endif
+
 
   call LVT_logSingleDataStreamVar(LVT_MOC_snowcover,source,snfrac,vlevel=1,units="-")
 
