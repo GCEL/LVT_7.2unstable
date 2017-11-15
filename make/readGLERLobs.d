@@ -1,0 +1,7 @@
+readGLERLobs.o readGLERLobs.d : readGLERLobs.F90
+readGLERLobs.o : LVT_coreMod.o
+readGLERLobs.o : LVT_timeMgrMod.o
+readGLERLobs.o : LVT_logMod.o
+readGLERLobs.o : LVT_histDataMod.o
+readGLERLobs.o : GLERL_dataMod.o
+readGLERLobs.o : map_utils.o

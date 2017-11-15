@@ -1,0 +1,7 @@
+readARMObs.o readARMObs.d : readARMObs.F90
+readARMObs.o : LVT_coreMod.o
+readARMObs.o : LVT_logMod.o
+readARMObs.o : LVT_histDataMod.o
+readARMObs.o : LVT_timeMgrMod.o
+readARMObs.o : ARM_obsMod.o
+readARMObs.o : map_utils.o

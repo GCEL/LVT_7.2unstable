@@ -1,0 +1,6 @@
+readGIMMSMODIS_NDVIObs.o readGIMMSMODIS_NDVIObs.d : readGIMMSMODIS_NDVIObs.F90
+readGIMMSMODIS_NDVIObs.o : LVT_misc.h
+readGIMMSMODIS_NDVIObs.o : LVT_coreMod.o
+readGIMMSMODIS_NDVIObs.o : LVT_logMod.o
+readGIMMSMODIS_NDVIObs.o : LVT_histDataMod.o
+readGIMMSMODIS_NDVIObs.o : GIMMSMODIS_NDVIobsMod.o

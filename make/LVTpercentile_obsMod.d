@@ -1,0 +1,5 @@
+LVTpercentile_obsMod.o LVTpercentile_obsMod.d : LVTpercentile_obsMod.F90
+LVTpercentile_obsMod.o : LVT_coreMod.o
+LVTpercentile_obsMod.o : LVT_histDataMod.o
+LVTpercentile_obsMod.o : LVT_timeMgrMod.o
+LVTpercentile_obsMod.o : LVT_logMod.o
