@@ -1,0 +1,27 @@
+FC              = gfortran
+FC77            = gfortran
+LD              = gfortran
+CC              = gcc
+AR              = ar
+MOD_ESMF        = /home/dvalters/dev/esmf/DEFAULTINSTALLDIR/mod/modO/Linux.gfortran.64.openmpi.default/
+LIB_ESMF        = /home/dvalters/dev/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.gfortran.64.openmpi.default/
+INC_NETCDF      = /usr/lib64/
+LIB_NETCDF      = /usr/lib64/
+INC_HDF4        = 
+LIB_HDF4        = 
+INC_HDF5        = 
+LIB_HDF5        = 
+INC_HDFEOS      = 
+LIB_HDFEOS      = 
+INC_JASPER      = /include/
+LIB_JASPER      = /lib/
+INC_GRIBAPI     = /usr/lib64/gfortran/modules/
+LIB_GRIBAPI     = /usr/lib64/gfortran/modules/
+INC_FORTRANGIS1 = 
+INC_FORTRANGIS2 = 
+LIB_FORTRANGIS  = 
+LIB_GDAL        = 
+CFLAGS          = -c -DGFORTRAN 
+FFLAGS77        = -c -pass-exit-codes -O2   -fconvert=big-endian -DHIDE_SHR_MSG -DNO_SHR_VMATH -DGFORTRAN -DHIDE_MPI -I$(MOD_ESMF) -I$(INC_GRIBAPI)  -I$(INC_NETCDF) 
+FFLAGS          =  -c -pass-exit-codes -ffree-line-length-0 -O2   -fconvert=big-endian -DHIDE_SHR_MSG -DNO_SHR_VMATH -DGFORTRAN -DHIDE_MPI -I$(MOD_ESMF) -I$(INC_GRIBAPI)  -I$(INC_NETCDF) 
+LDFLAGS         =  -L$(LIB_JASPER) -ljasper -L$(LIB_GRIBAPI) -lgrib_api_f90 -lgrib_api -L$(LIB_ESMF) -lesmf -lstdc++  -L$(LIB_NETCDF) -lnetcdff
