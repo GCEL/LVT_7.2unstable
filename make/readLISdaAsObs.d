@@ -1,4 +1,5 @@
 readLISdaAsObs.o readLISdaAsObs.d : readLISdaAsObs.F90
+readLISdaAsObs.o : LVT_misc.h
 readLISdaAsObs.o : LVT_coreMod.o
 readLISdaAsObs.o : LVT_histDataMod.o
 readLISdaAsObs.o : LVT_logMod.o

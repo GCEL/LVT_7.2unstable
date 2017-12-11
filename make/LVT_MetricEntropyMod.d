@@ -1,4 +1,5 @@
 LVT_MetricEntropyMod.o LVT_MetricEntropyMod.d : LVT_MetricEntropyMod.F90
+LVT_MetricEntropyMod.o : LVT_misc.h
 LVT_MetricEntropyMod.o : LVT_coreMod.o
 LVT_MetricEntropyMod.o : LVT_histDataMod.o
 LVT_MetricEntropyMod.o : LVT_statsDataMod.o

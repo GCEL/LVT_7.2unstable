@@ -1,4 +1,5 @@
 readGLERLobs.o readGLERLobs.d : readGLERLobs.F90
+readGLERLobs.o : LVT_misc.h
 readGLERLobs.o : LVT_coreMod.o
 readGLERLobs.o : LVT_timeMgrMod.o
 readGLERLobs.o : LVT_logMod.o

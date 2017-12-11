@@ -1,4 +1,5 @@
 readARMObs.o readARMObs.d : readARMObs.F90
+readARMObs.o : LVT_misc.h
 readARMObs.o : LVT_coreMod.o
 readARMObs.o : LVT_logMod.o
 readARMObs.o : LVT_histDataMod.o

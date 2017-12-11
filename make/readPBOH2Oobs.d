@@ -1,4 +1,5 @@
 readPBOH2Oobs.o readPBOH2Oobs.d : readPBOH2Oobs.F90
+readPBOH2Oobs.o : LVT_misc.h
 readPBOH2Oobs.o : LVT_coreMod.o
 readPBOH2Oobs.o : LVT_logMod.o
 readPBOH2Oobs.o : LVT_histDataMod.o

@@ -1,4 +1,5 @@
 readESACCIsmObs.o readESACCIsmObs.d : readESACCIsmObs.F90
+readESACCIsmObs.o : LVT_misc.h
 readESACCIsmObs.o : LVT_coreMod.o
 readESACCIsmObs.o : LVT_histDataMod.o
 readESACCIsmObs.o : LVT_logMod.o

@@ -3,14 +3,14 @@ FC77            = gfortran
 LD              = gfortran
 CC              = gcc
 AR              = ar
-MOD_ESMF        = /home/dvalters/dev/esmf/DEFAULTINSTALLDIR/mod/modO/Linux.gfortran.64.openmpi.default/ 
-LIB_ESMF        = /home/dvalters/dev/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.gfortran.64.openmpi.default/
+MOD_ESMF        = /home/dvalters/LVT/esmf/DEFAULTINSTALLDIR/mod/modO/Linux.gfortran.64.openmpi.default
+LIB_ESMF        = /home/dvalters/LVT/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.gfortran.64.openmpi.default
 INC_NETCDF      = /usr/lib64/
 LIB_NETCDF      = /usr/lib64/
-INC_HDF4        = /usr/lib64/
-LIB_HDF4        = /usr/lib64/
-INC_HDF5        = /usr/include/hdf/
-LIB_HDF5        = /usr/lib64/hdf/
+INC_HDF4        = 
+LIB_HDF4        = 
+INC_HDF5        = 
+LIB_HDF5        = 
 INC_HDFEOS      = 
 LIB_HDFEOS      = 
 INC_JASPER      = /include/
@@ -22,6 +22,6 @@ INC_FORTRANGIS2 =
 LIB_FORTRANGIS  = 
 LIB_GDAL        = 
 CFLAGS          = -c -DGFORTRAN 
-FFLAGS77        = -c -pass-exit-codes -O2   -fconvert=big-endian -DHIDE_SHR_MSG -DNO_SHR_VMATH -DGFORTRAN -DHIDE_MPI -I$(MOD_ESMF) -I$(INC_GRIBAPI)  -I$(INC_NETCDF)  -I$(INC_HDF4) 
-FFLAGS          =  -c -pass-exit-codes -ffree-line-length-0 -O2   -fconvert=big-endian -DHIDE_SHR_MSG -DNO_SHR_VMATH -DGFORTRAN -DHIDE_MPI -I$(MOD_ESMF) -I$(INC_GRIBAPI)  -I$(INC_NETCDF)  -I$(INC_HDF5) 
-LDFLAGS         =  -L$(LIB_JASPER) -ljasper -L$(LIB_GRIBAPI) -lgrib_api_f90 -lgrib_api -L$(LIB_ESMF) -lesmf -lstdc++  -L$(LIB_NETCDF) -lnetcdff -lnetcdf -L$(LIB_HDF5) -lmfhdf -ldf -ljpeg -lz 
+FFLAGS77        = -c -pass-exit-codes -O2   -fconvert=big-endian -DHIDE_SHR_MSG -DNO_SHR_VMATH -DGFORTRAN -DHIDE_MPI -I$(MOD_ESMF) -I$(INC_GRIBAPI)  -I$(INC_NETCDF) 
+FFLAGS          =  -c -pass-exit-codes -ffree-line-length-0 -O2   -fconvert=big-endian -DHIDE_SHR_MSG -DNO_SHR_VMATH -DGFORTRAN -DHIDE_MPI -I$(MOD_ESMF) -I$(INC_GRIBAPI)  -I$(INC_NETCDF) 
+LDFLAGS         =  -L$(LIB_JASPER) -ljasper -L$(LIB_GRIBAPI) -lgrib_api_f90 -lgrib_api -L$(LIB_ESMF) -lesmf -lstdc++  -L$(LIB_NETCDF) -lnetcdff -lnetcdf

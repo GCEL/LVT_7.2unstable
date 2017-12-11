@@ -1,4 +1,5 @@
 readSMOPSsmObs.o readSMOPSsmObs.d : readSMOPSsmObs.F90
+readSMOPSsmObs.o : LVT_misc.h
 readSMOPSsmObs.o : LVT_coreMod.o
 readSMOPSsmObs.o : LVT_histDataMod.o
 readSMOPSsmObs.o : LVT_logMod.o

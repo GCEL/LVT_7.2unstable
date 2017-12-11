@@ -1,4 +1,5 @@
 readsimGRACEObs.o readsimGRACEObs.d : readsimGRACEObs.F90
+readsimGRACEObs.o : LVT_misc.h
 readsimGRACEObs.o : LVT_coreMod.o
 readsimGRACEObs.o : LVT_logMod.o
 readsimGRACEObs.o : LVT_histDataMod.o

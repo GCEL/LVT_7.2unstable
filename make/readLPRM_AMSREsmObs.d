@@ -1,4 +1,5 @@
 readLPRM_AMSREsmObs.o readLPRM_AMSREsmObs.d : readLPRM_AMSREsmObs.F90
+readLPRM_AMSREsmObs.o : LVT_misc.h
 readLPRM_AMSREsmObs.o : LVT_coreMod.o
 readLPRM_AMSREsmObs.o : LVT_histDataMod.o
 readLPRM_AMSREsmObs.o : LVT_logMod.o

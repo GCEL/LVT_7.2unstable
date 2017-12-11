@@ -1,4 +1,5 @@
 readAGRMETdata.o readAGRMETdata.d : readAGRMETdata.F90
+readAGRMETdata.o : LVT_misc.h
 readAGRMETdata.o : LVT_coreMod.o
 readAGRMETdata.o : LVT_logMod.o
 readAGRMETdata.o : LVT_timeMgrMod.o

@@ -1,4 +1,5 @@
 readDaymetObs.o readDaymetObs.d : readDaymetObs.F90
+readDaymetObs.o : LVT_misc.h
 readDaymetObs.o : LVT_coreMod.o
 readDaymetObs.o : LVT_histDataMod.o
 readDaymetObs.o : LVT_logMod.o

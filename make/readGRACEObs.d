@@ -1,4 +1,5 @@
 readGRACEObs.o readGRACEObs.d : readGRACEObs.F90
+readGRACEObs.o : LVT_misc.h
 readGRACEObs.o : LVT_coreMod.o
 readGRACEObs.o : LVT_logMod.o
 readGRACEObs.o : LVT_histDataMod.o

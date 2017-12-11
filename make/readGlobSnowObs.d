@@ -1,4 +1,5 @@
 readGlobSnowObs.o readGlobSnowObs.d : readGlobSnowObs.F90
+readGlobSnowObs.o : LVT_misc.h
 readGlobSnowObs.o : LVT_coreMod.o
 readGlobSnowObs.o : LVT_logMod.o
 readGlobSnowObs.o : LVT_histDataMod.o

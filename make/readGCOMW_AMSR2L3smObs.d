@@ -1,4 +1,5 @@
 readGCOMW_AMSR2L3smObs.o readGCOMW_AMSR2L3smObs.d : readGCOMW_AMSR2L3smObs.F90
+readGCOMW_AMSR2L3smObs.o : LVT_misc.h
 readGCOMW_AMSR2L3smObs.o : LVT_coreMod.o
 readGCOMW_AMSR2L3smObs.o : LVT_histDataMod.o
 readGCOMW_AMSR2L3smObs.o : LVT_logMod.o
