@@ -5,8 +5,14 @@ export LVT_FC=gfortran
 # /usr/include/grib_api.h
 export LVT_GRIBAPI=/usr/share/grib_api
 export LVT_JASPER=
-export LVT_LIBESMF=/home/dvalters/LVT/esmf52/lib/libO/Linux.gfortran.64.mpiuni.default/
-export LVT_MODESMF=/home/dvalters/LVT/esmf52/mod/modO/Linux.gfortran.64.mpiuni.default/
+
+export LVT_LIBESMF=/home/dvalters/LVT/esmf/lib/libO/Linux.gfortran.64.openmpi.default/
+export LVT_MODESMF=/home/dvalters/LVT/esmf/mod/modO/Linux.gfortran.64.openmpi.default/
+
+# no mpi
+#export LVT_LIBESMF=/home/dvalters/LVT/esmf52/lib/libO/Linux.gfortran.64.mpiuni.default/
+#export LVT_MODESMF=/home/dvalters/LVT/esmf52/mod/modO/Linux.gfortran.64.mpiuni.default/
+
 export LVT_SRC=/home/dvalters/LVT/LVT_public_release_7.2r
 # /usr/include/
 export LVT_NETCDF=/usr/lib64/

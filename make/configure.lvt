@@ -3,8 +3,8 @@ FC77            = gfortran
 LD              = gfortran
 CC              = gcc
 AR              = ar
-MOD_ESMF        = /home/dvalters/LVT/esmf/DEFAULTINSTALLDIR/mod/modO/Linux.gfortran.64.openmpi.default
-LIB_ESMF        = /home/dvalters/LVT/esmf/DEFAULTINSTALLDIR/lib/libO/Linux.gfortran.64.openmpi.default
+MOD_ESMF        = /home/dvalters/LVT/esmf/mod/modO/Linux.gfortran.64.openmpi.default/
+LIB_ESMF        = /home/dvalters/LVT/esmf/lib/libO/Linux.gfortran.64.openmpi.default/
 INC_NETCDF      = /usr/lib64/
 LIB_NETCDF      = /usr/lib64/
 INC_HDF4        = 
@@ -24,4 +24,4 @@ LIB_GDAL        =
 CFLAGS          = -c -DGFORTRAN 
 FFLAGS77        = -c -pass-exit-codes -O2   -fconvert=big-endian -DHIDE_SHR_MSG -DNO_SHR_VMATH -DGFORTRAN -DHIDE_MPI -I$(MOD_ESMF) -I$(INC_GRIBAPI)  -I$(INC_NETCDF) 
 FFLAGS          =  -c -pass-exit-codes -ffree-line-length-0 -O2   -fconvert=big-endian -DHIDE_SHR_MSG -DNO_SHR_VMATH -DGFORTRAN -DHIDE_MPI -I$(MOD_ESMF) -I$(INC_GRIBAPI)  -I$(INC_NETCDF) 
-LDFLAGS         =  -L$(LIB_JASPER) -ljasper -L$(LIB_GRIBAPI) -lgrib_api_f90 -lgrib_api -L$(LIB_ESMF) -lesmf -lstdc++  -L$(LIB_NETCDF) -lnetcdff -lnetcdf
+LDFLAGS         =  -L$(LIB_JASPER) -ljasper -L$(LIB_GRIBAPI) -lgrib_api_f90 -lgrib_api -L$(LIB_ESMF) -lesmf -lstdc++  -L$(LIB_NETCDF) -lnetcdff -lnetcdf -Wl,-rpath,/home/dvalters/LVT/libfabric/lib/ -L/home/dvalters/LVT/libfabric/lib/ -lfabric
