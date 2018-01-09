@@ -1,4 +1,5 @@
 LVT_domainMod.o LVT_domainMod.d : LVT_domainMod.F90
+LVT_domainMod.o : LVT_misc.h
 LVT_domainMod.o : LVT_coreMod.o
 LVT_domainMod.o : LVT_domain_pluginMod.o
 LVT_domainMod.o : LVT_LMLCMod.o

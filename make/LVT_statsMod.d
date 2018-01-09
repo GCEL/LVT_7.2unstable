@@ -1,4 +1,5 @@
 LVT_statsMod.o LVT_statsMod.d : LVT_statsMod.F90
+LVT_statsMod.o : LVT_misc.h
 LVT_statsMod.o : LVT_coreMod.o
 LVT_statsMod.o : LVT_timeMgrMod.o
 LVT_statsMod.o : LVT_histDataMod.o
